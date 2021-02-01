@@ -1,0 +1,137 @@
+:root{
+    --vermelho:  rgba(202, 17, 17, 0.932);
+    --preto: rgba(0, 0, 0, 0.89);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: grey;
+    margin-right: 15px;
+}
+
+
+header nav a:hover{
+    color: white;
+}
+
+.filme_capa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    font-size: 15px;
+
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("/imagens/capa_bgs.jpg");  
+    
+    
+    background-size: cover;
+    height: 600px;
+    
+}
+
+.filme_capa .sinopse{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 20px;  
+}
+
+
+.filme_capa .titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}
+
+/* botão "Assistir Agora" */
+.filme_capa .botao1{
+    background-color: rgba(0,0,0,.30);
+    border: none;
+    color: silver;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 25px;
+    margin-right: 30px;
+
+    cursor: pointer;    
+    transition: .4s ease all;
+}
+
+/* botão "Veja Mais" */
+.filme_capa .botao2{
+    background-color: rgba(0,0,0,.30);
+    border: none;
+    color: silver;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 25px;
+    margin-right: 30px;
+
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao1:hover{
+    background-color: red;
+    color: black;
+}
+
+.botao2:hover{
+    background-color: rgb(224, 219, 211);
+    color: black;
+}
+
+.botao2 i{
+    margin-right: 5px;
+}
+ .filme_capa .container{
+    width: 75%;
+}
+
+ .container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+/* carrossel */
+.box_filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel{
+    margin-top:7px;
+} 
